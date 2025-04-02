@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Asmit Singh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: 0.3s ease-in-out;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+        section {
+            padding: 100px 20px;
+            margin-top: 60px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .show-section {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        .project, .testimonial {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px;
+            display: inline-block;
+            width: 30%;
+            transition: transform 0.3s;
+        }
+        .project:hover, .testimonial:hover {
+            transform: scale(1.05);
+        }
+        .resume-btn {
+            display: inline-block;
+            background: #ffcc00;
+            color: #121212;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .resume-btn:hover {
+            background: #ff6600;
+            color: white;
+        }
+        footer {
+            background: #1f1f1f;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .project, .testimonial {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Asmit Singh</h1>
+        <p>UI/UX Designer | Front-End Developer | Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Asmit Singh, a passionate UI/UX designer and front-end developer.</p>
+        <img src="https://imgs.search.brave.com/oyCZwbCDiNfMbQ2IHszjcnheFYsmHhlW6tINURK7m-s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvcGZw/LXBpY3R1cmVzLWV4/N204cGdyMGZvNXlp/Y3cuanBn" alt="Asmit Singh" width="200" style="border-radius: 50%;">
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="https://imgs.search.brave.com/Op3TH89LJUfroC9J3fFx-99DtW5dD-UZqjU1qQ2LeZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/aHJpc3RtYXMtdHJh/dmVsLWNvbmNlcHQt/d2l0aC1sYXB0b3Bf/MjMtMjE0OTU3MzA4/MC5qcGc_c2VtdD1h/aXNfaHlicmlk" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Interactive travel booking website.</p>
+        </div>
+        <div class="project">
+            <img src="https://imgs.search.brave.com/pJTI_wP3d2PD7qX9xe4yX9g3eHz868OsZ7EnJ9-NAA0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzIzLzI5LzAy/LzM2MF9GXzIyMzI5/MDI0MF92MWJGRzRV/S3VlWFB4TzhXWEpV/ZU4wUVhqMHl5aUc3/VC5qcGc" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>E-commerce website with modern UI.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Providing professional UI/UX design, front-end development, and graphic design services.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume:</p>
+        <a href="https://drive.google.com/file/d/1CDyBpPaIwEmp7X54dJmbXQRujioPUesR/view?usp=drive_link" download class="resume-btn">Download Resume</a>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Asmit is an amazing designer! Highly recommend!" - Client A</p>
+        </div>
+        <div class="testimonial">
+            <p>"Professional work and great creativity!" - Client B</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay updated with my latest UI/UX design insights and tutorials.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Smooth animations
+            const sections = document.querySelectorAll("section");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-section");
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Contact form
+            document.querySelector("#contactForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                const name = document.querySelector("#name").value;
+                alert(`Thank you, ${name}! Your message has been sent.`);
+                document.querySelector("#contactForm").reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
